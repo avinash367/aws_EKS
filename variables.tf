@@ -1,9 +1,20 @@
-variable "cluster-name" {
-  default = "terraform-eks-demo"
+
+
+
+variable "aws_region" {
+  default = "eu-west-1"
   type    = string
 }
 
-variable "aws_region" {
-  default = "eu-west-2"
+
+variable "vpc_name" {
+  default = "eks-vpc"
+  type = string
+}
+
+
+variable "eks_cluster_name" {
+  default = "ekscluster01"
   type    = string
 }
+
