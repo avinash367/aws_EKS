@@ -15,8 +15,10 @@ Choose your region. EKS is not available in every region, use the Region Table t
 
 Make changes in providers.tf accordingly (region, optionally profile)
 
+### Terraform apply
+
 ```bash
-Terraform apply
+
 terraform init
 terraform apply
 Configure kubectl
