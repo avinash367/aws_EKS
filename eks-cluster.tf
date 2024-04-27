@@ -27,7 +27,7 @@ resource "aws_iam_role_policy_attachment" "demo-cluster-AmazonEKSVPCResourceCont
 resource "aws_security_group" "eks-cluster-sg" {
   name        = "${var.eks_cluster_name}-eks-sg"
   description = "Cluster communication with worker nodes"
-  vpc_id      = module.vpc.default_vpc_id
+  vpc_id      = module.vpc.vpc_id
 
   egress {
     from_port   = 0
